@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Navbar with Background Image</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+          
+          
+          .navbar {
+                  background-color: white;
+                  margin-bottom: 0;
+                  padding-bottom: 0%;
+                  
+          }
+          .navbar-brand img{
+              height:30%;
+              width:100%;
+              
+          }
+          .text{
+         color:white;
+         position: absolute;
+          }
+          .div{
+        width:100%;
+        padding-right: 0%;
+        
+      }
+      .bottom-left{
+         bottom:0;
+         left:8%;
+      }
+      
+      .container2 {
+        float: left;
+        display: block;
+        margin-top: 6%;
+        padding-left: 25%;
+      }
+      .container{
+        margin-top: 6%;
+        flex-wrap: wrap;
+      }
+      .container4{
+        margin-top: 3%;
+      }
+      .image-container {
+      position: relative;
+      display: inline-block;
+    }.footer {
+      background-color: navy;
+      color:red;
+      padding: 70px 5px;
+      height: 50%;
+      margin-top: 80px;
+    }
+    .footer-logo{
+      max-width: 150px;
+    }
+    .image-text {
+      
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white; /* Text color */
+      font-size: 20px; /* Font size */
+      background: rgba(0, 0, 0, 0.5); /* Background color with opacity */
+      padding: 5px 10px; /* Padding */
+    }
+    .image-text1 {
+      
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color:white; /* Text color */
+      font-size: 20px; /* Font size */
+      
+      padding: 5px 10px; /* Padding */
+    }
+    .image-text2 {
+      
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color:black; /* Text color */
+      font-size: 20px; /* Font size */
+      
+      padding: 5px 10px; /* Padding */
+    }
+    
+        </style>
+      </head>
+      <body>
+      
+          
+      <nav class="navbar navbar-expand-lg ">
+          
+              <a class="navbar-brand" >
+                  <img src="logo.jpg" alt="logo"></a> 
+                  <a class="div" >People's<br>Anti-Corruption<br>training<br> Platform</a>
+                  
+              
+                  
+              
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item active">
+                          <a class="nav-link" href="http://127.0.0.1:5500/project.html"><h5>HOME</h5> <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="http://127.0.0.1:5500/about.html"><h5>ABOUT</h5></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="http://127.0.0.1:5500/training.html"><h5>TRAINING</h5></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="http://127.0.0.1:5500/websites.html"><h5>WEBSITES</h5></a>
+                      </li>
+                      
+                      <li class="nav-item">
+                          <a class="nav-link" href="http://127.0.0.1:5500/videos.html"><h5>VIDEOS</h5></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="http://127.0.0.1:5500/connect.html"><h5>CONNECT</h5></a>
+                      </li>
+                  </ul>
+              </div>
+          
+      
+        
+      </nav>
+
+  
+    
+      
+      
+      
+      
+      <body>
+        <div class="container4">
+        
+    
+          <h1 class="text-center text-primary">
+              WEBSITES
+            </h1>
+            <h5 class="text-center " >
+              This section includes websites related to anti-corruption of different organizations. </h5>
+             
+            </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <!-- First Image with Click Event -->
+              <img src="w1.jpg" alt="Click to open website" id="websiteImage1" class="img-fluid" style="cursor: pointer;">
+              <div class="image-text">UNDP</div>
+              <div class ="image-text1">The Global Portal On  anti-corruption For Development</div>
+              
+            </div>
+            <div class="col-md-4">
+              <!-- Second Image with Click Event -->
+              <img src="w3.jpg" alt="Click to open website" id="websiteImage2" class="img-fluid" style="cursor: pointer;">
+              <div class="image-text">IACC</div>
+              <div class ="image-text2">International Anti-Corruption Conference</div>
+            </div>
+            <div class="col-md-4">
+              <!-- Third Image with Click Event -->
+              <img src="w4.jpg" alt="Click to open website" id="websiteImage3" class="img-fluid" style="cursor: pointer;">
+              <div class="image-text">AFRICAN UNION</div>
+              <div class ="image-text1">International Anti-Corruption Commission</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+        <script>
+          // JavaScript to open website on image click
+          document.getElementById('websiteImage1').addEventListener('click', function() {
+            window.open('https://anti-corruption.org/', '_blank'); // Change 'https://example.com' to the website URL you want to open
+          });
+        
+          document.getElementById('websiteImage2').addEventListener('click', function() {
+            window.open('https://iaccseries.org/', '_blank'); // Change 'https://example.com' to the website URL you want to open
+          });
+        
+          document.getElementById('websiteImage3').addEventListener('click', function() {
+            window.open('https://au.int/', '_blank'); // Change 'https://example.com' to the website URL you want to open
+          });
+        </script>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <!-- First Image with Click Event -->
+              <img src="w7.jpg" alt="Click to open website" id="websiteImage4" class="img-fluid" style="cursor: pointer;">
+              <div class="image-text">GOPAC</div>
+              <div class ="image-text1">Global organization of parliamentarians against corruption</div>
+            </div>
+            <div class="col-md-4">
+              <!-- Second Image with Click Event -->
+              <img src="w5.jpeg" alt="Click to open website" id="websiteImage5" class="img-fluid" style="cursor: pointer;">
+              <div class="image-text">ICC</div>
+              <div class ="image-text1">International chamber of commerce</div>
+            </div>
+            <div class="col-md-4">
+              <!-- Third Image with Click Event -->
+              <img src="w9.jpg" alt="Click to open website" id="websiteImage6" class="img-fluid" style="cursor: pointer;">
+              <div class="image-text">IMF</div>
+              <div class ="image-text1">International monetary fund</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+        <script>
+          // JavaScript to open website on image click
+          document.getElementById('websiteImage4').addEventListener('click', function() {
+            window.open('https://www.gopacnetwork.org/', '_blank'); // Change 'https://example.com' to the website URL you want to open
+          });
+        
+          document.getElementById('websiteImage5').addEventListener('click', function() {
+            window.open('https://iccwbo.org/', '_blank'); // Change 'https://example.com' to the website URL you want to open
+          });
+        
+          document.getElementById('websiteImage6').addEventListener('click', function() {
+            window.open('https://www.imf.org/en/home', '_blank'); // Change 'https://example.com' to the website URL you want to open
+          });
+        </script>
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <!-- First Image with Click Event -->
+              <img src="k1.jpg" alt="Click to open website" id="websiteImage7" class="img-fluid" style="cursor: pointer;">
+              <div class="image-text">OLAF</div>
+              <div class ="image-text2">Europian anti-fraud office</div>
+            </div>
+            <div class="col-md-4">
+              <!-- Second Image with Click Event -->
+              <img src="k2.jpg" alt="Click to open website" id="websiteImage8" class="img-fluid" style="cursor: pointer;">
+              <div class="image-text">INTERPOL</div>
+              <div class ="image-text2">INTERNATIONAL CRIMINAL POLICE ORGANIZATION</div>
+            </div>
+            <div class="col-md-4">
+              <!-- Third Image with Click Event -->
+              <img src="k3.jpg" alt="Click to open website" id="websiteImage9" class="img-fluid" style="cursor: pointer;">
+              <div class="image-text">OAS</div>
+              <div class ="image-text2">ORGANISATION OF AMERICAN STATES</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+        <script>
+          // JavaScript to open website on image click
+          document.getElementById('websiteImage7').addEventListener('click', function() {
+            window.open('https://www.un-anticorruption-learn.org/human-rights-council', '_blank'); // Change 'https://example.com' to the website URL you want to open
+          });
+        
+          document.getElementById('websiteImage8').addEventListener('click', function() {
+            window.open('https://www.interpol.int/en', '_blank'); // Change 'https://example.com' to the website URL you want to open
+          });
+        
+          document.getElementById('websiteImage9').addEventListener('click', function() {
+            window.open('https://www.oas.org/en/', '_blank'); // Change 'https://example.com' to the website URL you want to open
+          });
+        </script>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <!-- First Image with Click Event -->
+              <img src="k6.jpeg" alt="Click to open website" id="websiteImage10" class="img-fluid" style="cursor: pointer;">
+              <div class="image-text">UNECA</div>
+              <div class ="image-text1">UNITED NATIONS ECONOMIC COMMISSION FOR AFRICA</div>
+            </div>
+            <div class="col-md-4">
+              <!-- Second Image with Click Event -->
+              <img src="k7.jpg" alt="Click to open website" id="websiteImage11" class="img-fluid" style="cursor: pointer;">
+              <div class="image-text">UNGC</div>
+              <div class ="image-text1">UN GLOBAL COMPACT</div>
+            </div>
+            <div class="col-md-4">
+              <!-- Third Image with Click Event -->
+              <img src="k8.jpg" alt="Click to open website" id="websiteImage12" class="img-fluid" style="cursor: pointer;">
+              <div class="image-text">WBG</div>
+              <div class ="image-text1">WORLD BANK GROUP</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+        <script>
+          // JavaScript to open website on image click
+          document.getElementById('websiteImage10').addEventListener('click', function() {
+            window.open('https://www.uneca.org/', '_blank'); // Change 'https://example.com' to the website URL you want to open
+          });
+        
+          document.getElementById('websiteImage11').addEventListener('click', function() {
+            window.open('https://unglobalcompact.org/', '_blank'); // Change 'https://example.com' to the website URL you want to open
+          });
+        
+          document.getElementById('websiteImage12').addEventListener('click', function() {
+            window.open('https://www.worldbank.org/en/home', '_blank'); // Change 'https://example.com' to the website URL you want to open
+          });
+        </script>
+        
+        <!-- Footer -->
+  <footer class="footer text-center">
+    <img src="logo.jpg" alt="Global Anti-Corruption Training Platform Logo" class="footer-logo">
+      <p>&copy; 2024<br> People's Anti-Corruption Training Platform.<br> All rights reserved.<br><h5>San Francisco,
+        California, USA. </h5><br></p>
+    </div>
+  </footer>
+  <!-- End of Footer -->
+        
+        </body>
+        </html>
+        
+        

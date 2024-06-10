@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circle Images with Text</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .circle-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 20px;
+      display: inline-block;
+    }
+
+    .circle-img img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <!-- First Row -->
+      <div class="col-md-4">
+        <div class="circle-img">
+          <img src="https://via.placeholder.com/150" alt="Circle Image">
+        </div>
+        <div>
+          <h4>Image 1</h4>
+          <p>Description for Image 1</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Second Row -->
+      <div class="col-md-4 order-md-last">
+        <div class="circle-img">
+          <img src="https://via.placeholder.com/150" alt="Circle Image">
+        </div>
+        <div>
+          <h4>Image 2</h4>
+          <p>Description for Image 2</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Third Row -->
+      <div class="col-md-4">
+        <div class="circle-img">
+          <img src="https://via.placeholder.com/150" alt="Circle Image">
+        </div>
+        <div>
+          <h4>Image 3</h4>
+          <p>Description for Image 3</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

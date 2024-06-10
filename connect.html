@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form with Google Map</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar {
+                  background-color: white;
+                  margin-bottom: 0;
+                  padding-bottom: 0%;
+                  
+          }
+          .navbar-brand img{
+              height:30%;
+              width:100%;
+              
+          }
+          .text{
+         color:white;
+         position: absolute;
+          }
+          .div{
+        width:100%;
+        padding-right: 0%;
+        
+      }
+      .bottom-left{
+         bottom:0;
+         left:8%;
+      }
+      
+      .container2 {
+        float: left;
+        display: block;
+        margin-top: 6%;
+        padding-left: 25%;
+      }
+      .container{
+        margin-top: 6%;
+        flex-wrap: wrap;
+      }
+      .container4{
+        margin-top: 3%;
+      }
+      .image-container {
+      position: relative;
+      display: inline-block;
+    }
+    .footer {
+      background-color: navy;
+      color:red;
+      padding: 50px 0;
+      margin-top: 20px;
+      
+
+    }
+    .footer-logo{
+      max-width: 150px;
+    }
+    
+        </style>
+      </head>
+      <body>
+      
+          
+      <nav class="navbar navbar-expand-lg ">
+          
+              <a class="navbar-brand" >
+                  <img src="logo.jpg" alt="logo"></a> 
+                  <a class="div" >People's<br>Anti-Corruption<br>training<br> Platform</a>
+                  
+              
+                  
+              
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item active">
+                          <a class="nav-link" href="http://127.0.0.1:5500/project.html"><h5>HOME</h5> <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="http://127.0.0.1:5500/about.html"><h5>ABOUT</h5></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="http://127.0.0.1:5500/training.html"><h5>TRAINING</h5></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="http://127.0.0.1:5500/websites.html"><h5>WEBSITES</h5></a>
+                      </li>
+                      
+                      <li class="nav-item">
+                          <a class="nav-link" href="http://127.0.0.1:5500/videos.html"><h5>VIDEOS</h5></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="http://127.0.0.1:5500/connect.html"><h5>CONNECT</h5></a>
+                      </li>
+                  </ul>
+              </div>
+          
+     
+        
+      </nav>
+
+  
+    
+      
+      
+      
+      
+      <body>
+        <div class="container4">
+        
+    
+          <h1 class="text-center text-primary">
+              CONNECT WITH US
+            </h1>
+           
+  </body>
+</body>
+<body>
+
+<div class="container">
+    
+        </div>
+  <div class="row">
+    <div class="col-md-6">
+      <!-- Embedded Google Map -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158858.4298818916!2d-122.4194159321726!3d37.774929522347165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580d3395a4bb1%3A0x5b180edf47e5936!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1623160867024!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="col-md-6">
+        <h5 class="text-primary"> 
+            We are located at the  Headquarters of<br>San Francisco,
+            California, USA. </h5>
+             
+      <!-- Contact Form -->
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject:</label>
+          <input type="text" class="form-control" id="subject" placeholder="Enter subject" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var subject = document.getElementById('subject').value;
+    var message = document.getElementById('message').value;
+    
+    if (!name || !email || !subject || !message) {
+      event.preventDefault();
+      alert('All fields are required.');
+      return;
+    }
+    
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+      event.preventDefault();
+      alert('Please enter a valid email address.');
+      return;
+    }
+  });
+</script>
+</body>
+<!-- Footer -->
+<footer class="footer text-center">
+  <img src="logo.jpg" alt="Global Anti-Corruption Training Platform Logo" class="footer-logo">
+    <p>&copy; 2024<br> People's Anti-Corruption Training Platform.<br> All rights reserved.<br><h5>San Francisco,
+      California, USA. </h5><br></p>
+  </div>
+</footer>
+<!-- End of Footer -->
+</html>
